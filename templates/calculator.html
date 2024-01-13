@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <script src="{{url_for('static', filename='script/calculator.js')}}"></script>
+  </head>
+  <body>
+    <h1>Simple Calculator</h1>
+    <input type="text" id="value1" />
+    <select id="operator">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <!-- Add more operations as needed -->
+    </select>
+    <input type="text" id="value2" />
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+  </body>
+</html>

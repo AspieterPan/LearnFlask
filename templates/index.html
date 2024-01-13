@@ -1,25 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>{{ name }}'s Watchlist</title>
-</head>
-
-<body>
-    <h2>{{ name }}'s Watchlist</h2>
-    <p>{{ movies|length }} Titles</p>
+<!doctype html>
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Welcome to My Flask App</h1>
     <ul>
-        {% for movie in movies %}
-        <li>
-            {{ movie.title }} - {{ movie.year }}
-        </li>
-        {% endfor %}
+      <li><a href="/calculator">Calculator</a></li>
     </ul>
-    <footer>
-        <small>&copy; 2018 <a href="http://helloflask.com/book/3">HelloFlask</a></small>
-    </footer>
-
-</body>
-
+  </body>
 </html>
+
