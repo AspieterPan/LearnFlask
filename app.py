@@ -6,8 +6,10 @@ app = Flask(__name__)
 # init config
 if os.getenv("APP_ENV") == "prod":
     app.debug = False
+    host = "0.0.0.0"
 else:
     app.debug = True
+    host = "127.0.0.1"
 
 
 # route
@@ -22,4 +24,4 @@ def calculator():
 
 
 if __name__ == "__main__":
-    app.run(port=8080)
+    app.run(host = host, port=8080)
