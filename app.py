@@ -5,9 +5,9 @@ app = Flask(__name__)
 
 # init config
 if os.getenv("APP_ENV") == "prod":
-    app.debug = True
-else:
     app.debug = False
+else:
+    app.debug = True
 
 
 # route
