@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <form method="post">
+      <input
+        type="text"
+        name="expression"
+        placeholder="Enter expression (e.g., 2+2)"
+      />
+      <input type="submit" value="Calculate" />
+    </form>
+
+    <h2>Previous Calculations</h2>
+    <ul>
+      {% for calculation in calculations %}
+      <li>{{ calculation.expression }} = {{ calculation.result }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
